@@ -1,0 +1,22 @@
+@charset "utf-8";
+@use '../../foundation/vars' as v;
+
+/* back ground color
+----------------------------------------------------------------- */
+.u-bg {
+  &--theme {
+    background: v.$colorTheme;
+  }
+  &--sub {
+    background: v.$colorSub;
+  }
+  &--gray {
+    background-color: v.$colorBgGray;
+    &-dark {
+      background-color: v.$colorBgGrayDark;
+    }
+    &-light {
+      background-color: v.$colorBgGrayLight;
+    }
+  }
+}
