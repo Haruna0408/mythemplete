@@ -8,8 +8,8 @@ const browserSync = require("browser-sync"); //ブラウザリロード
 
 
 // 入出力するフォルダを指定
-const devBase = './_static/dev';
-const distBase = './_static/dist';
+const devBase = '../_static/dev';
+const distBase = '../_static/dist';
 
 
 const devPath = {
@@ -61,7 +61,7 @@ const browserSyncFunc = () => {
 }
 
 const browserSyncOption = {
-    server: "./_static/dist/"
+    server: "../_static/dist/"
 }
 
 /**
