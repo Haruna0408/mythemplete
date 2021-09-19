@@ -76,6 +76,18 @@
   max-width: 1080px;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (min-width: 768px) and (max-width: 1024px){
+    width: 96%;
+    max-width: 96%;
+    padding: 0 2%;
+  }
+
+  @media screen and (max-width: 767px){
+    width: 100%;
+    max-width: 100%;
+    padding: 0 4%;
+  }
 }
 
 @mixin l-inner__min {
