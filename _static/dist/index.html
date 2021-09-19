@@ -43,6 +43,13 @@
 </head>
 
 <body>
+    <!-- /loading -->
+    <div id="loading">
+        <div class="p-loading_item"></div>
+        <!-- <p class="p-loading_img"><img src="./assets/img/img_about.png" alt="ローディング画像"></p> -->
+        <p class="p-loading_text">Loading...</p>
+    </div>
+
     <div class="l-wrapper">
         <header class="l-header">
             <div class="l-header__inner">
@@ -68,18 +75,18 @@
         <!--.l-header /-->
         <article class="l-article">
             <main class="l-main">
-                <div class="l-mainvisual">
+                <div class="parallax_bg">
+                    <div class="parallax_bg_child">
+                        <video class="pc" autoplay loop muted playsinline src="./assets/movie/bg_mv_pc.mp4" type="video/mp4">
+                            <source srcset=" bg_mv_pc.mp4">
+                        </video>
+                        <video class="sp" autoplay loop muted playsinline src="./assets/movie/bg_mv_sp.mp4" type="video/mp4">
+                            <source srcset=" bg_mv_sp.mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="l-section l-mainvisual">
                     <div class="l-inner">
-                        <div class="parallax_bg">
-                            <div class="parallax_bg_child">
-                                <video class="pc" autoplay loop muted playsinline src="./assets/movie/bg_mv_pc.mp4" type="video/mp4">
-                                    <source srcset=" bg_mv_pc.mp4">
-                                </video>
-                                <video class="sp" autoplay loop muted playsinline src="./assets/movie/bg_mv_sp.mp4" type="video/mp4">
-                                    <source srcset=" bg_mv_sp.mp4">
-                                </video>
-                            </div>
-                        </div>
 
                         <!-- mv video -->
                         <div class="p-mainvisual__area">
@@ -99,6 +106,90 @@
                     </div>
                 </div>
                 <!--.l-mainvisual /-->
+
+                <section class="l-section l-pickup">
+                    <div class="l-inner">
+                        <!-- コンテンツ -->
+                        <h2 class="c-heading">
+                            <span class="c-heading__main">ADVANTAGE</span>
+                            <span class="c-heading__sub">わくワークの3つの強み</span>
+                        </h2>
+
+                        <div class="p-card__list">
+                            <!-- Advantage01 -->
+                            <div class="p-card__item">
+                                <!-- <a href="#" class="p-card__link"> -->
+                                    <div class="p-card__img" style="background-image: url();">
+                                        <!--/img-->
+                                        <img src="./assets/img/top/icon-advantage01.svg" alt="ナイトワークアイコン">
+                                        <!-- /picture pc/ spで画像切り替え -->
+                                        <picture>
+                                            <source srcset="./assets/img/card-img.jpg" media="(min-width: 768px)" />
+                                            <img src="./assets/img/card-img-sp.jpg" alt="" />
+                                        </picture>
+                                    </div>
+                                    <div class="p-card__body">
+                                        <h3 class="c-title p-card__title">天文館ナイトワークに特化！</h3>
+                                        <p class="c-lead p-card__lead">
+                                            テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                                        </p>
+                                    </div>
+                                <!-- </a> -->
+                                <!-- 記事ページへリンク -->
+                                <a href="#" class="c-button__base p-card__button">MORE DETAIL</a>
+                            </div>
+
+                            <!-- Advantage02 -->
+                            <div class="p-card__item">
+                                <!-- <a href="#" class="p-card__link"> -->
+                                <div class="p-card__img" style="background-image: url();">
+                                    <!--/img-->
+                                    <img src="./assets/img/top/icon-advantage01.svg" alt="ナイトワークアイコン">
+                                    <!-- /picture pc/ spで画像切り替え -->
+                                    <picture>
+                                        <source srcset="./assets/img/card-img.jpg" media="(min-width: 768px)" />
+                                        <img src="./assets/img/card-img-sp.jpg" alt="" />
+                                    </picture>
+                                </div>
+                                <div class="p-card__body">
+                                    <h3 class="c-title p-card__title">天文館ナイトワークに特化！</h3>
+                                    <p class="c-lead p-card__lead">
+                                        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。キストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                                    </p>
+                                </div>
+                                <!-- </a> -->
+                                <!-- 記事ページへリンク -->
+                                <a href="#" class="c-button__base p-card__button">MORE DETAIL</a>
+                            </div>
+
+                            <!-- Advantage03 -->
+                            <div class="p-card__item">
+                                <!-- <a href="#" class="p-card__link"> -->
+                                <div class="p-card__img" style="background-image: url();">
+                                    <!--/img-->
+                                    <img src="./assets/img/top/icon-advantage01.svg" alt="ナイトワークアイコン">
+                                    <!-- /picture pc/ spで画像切り替え -->
+                                    <picture>
+                                        <source srcset="./assets/img/card-img.jpg" media="(min-width: 768px)" />
+                                        <img src="./assets/img/card-img-sp.jpg" alt="" />
+                                    </picture>
+                                </div>
+                                <div class="p-card__body">
+                                    <h3 class="c-title p-card__title">天文館ナイトワークに特化！</h3>
+                                    <p class="c-lead p-card__lead">
+                                        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                                    </p>
+                                </div>
+                                <!-- </a> -->
+                                <!-- 記事ページへリンク -->
+                                <a href="#" class="c-button__base p-card__button">MORE DETAIL</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </section>
+                <!--.l-pickup /-->
 
                 <section id="blog" class="l-section l-section__blog">
                     <div class="l-inner">
@@ -158,6 +249,7 @@
     <!--.l-wrapper /-->
 <!-- /JS -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script><!-- /全体-->
-<!--<script src="../assets/js/common.js"></script>--><!-- /全体-->
+<script src="../assets/js/common.js"></script><!-- /全体-->
+<script src="../assets/js/animation.js"></script><!-- /アニメーション用-->
 </body>
 </html>
