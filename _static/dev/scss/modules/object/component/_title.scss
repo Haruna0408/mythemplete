@@ -1,3 +1,9 @@
+@charset "utf-8";
+@use '../../foundation/vars' as v;
+@use '../../foundation/mixin' as m;
+
+/* heading
+-------------------------------------*/
 h1 {
   color: blue;
   span {
