@@ -70,13 +70,30 @@
             <main class="l-main">
                 <div class="l-mainvisual">
                     <div class="l-inner">
-                        <div class="p-mainvisual">
-                            <div class="p-mainvisual__left">
-                                <h1 class="p-mainvisual__text--main">Create Hack</h1>
-                                <p class="p-mainvisual__text--sub">~&nbsp;Web 制作に役立つハックマガジン&nbsp;~</p>
+                        <div class="parallax_bg">
+                            <div class="parallax_bg_child">
+                                <video class="pc" autoplay loop muted playsinline src="./assets/movie/bg_mv_pc.mp4" type="video/mp4">
+                                    <source srcset=" bg_mv_pc.mp4">
+                                </video>
+                                <video class="sp" autoplay loop muted playsinline src="./assets/movie/bg_mv_sp.mp4" type="video/mp4">
+                                    <source srcset=" bg_mv_sp.mp4">
+                                </video>
                             </div>
-                            <div class="p-mainvisual__right">
-                                <img src="./assets/img/img-mv_pc.png" alt="まめなハックスメインビジュアル">
+                        </div>
+
+                        <!-- mv video -->
+                        <div class="p-mainvisual__area">
+                            <!-- mv -->
+                            <div class="p-mainvisual__wrap">
+                                <video src="./assets/movie/bg_mv.mp4" class="p-mainvisual__movie ie_object_images" playsinline="" autoplay=""
+                                    muted="" loop=""></video>
+                                <div class="p-mainvisual__text">
+                                    <picture>
+                                        <source media="(min-width: 701px)" srcset="./assets/images/pc/mv-tit@2x.png">
+                                        <source media="(max-width: 700px)" srcset="./assets/images/sp/mv-tit_sp@2x.png">
+                                        <img src="/assets/images/pc/mv-tit@2x.png" alt="空気から暮らしを考えるナノイーx水から生まれた清潔イオン">
+                                    </picture>
+                                </div>
                             </div>
                         </div>
                     </div>
