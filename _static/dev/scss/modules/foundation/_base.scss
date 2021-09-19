@@ -31,6 +31,8 @@ body {
 	color: v.$colorBase;
   cursor: auto;
   background-color: v.$colorBg;
+  font-feature-settings: "palt";
+
   @include m.mq-max(v.$breakpoint-xs) {
     min-width: initial;
 	  font-size: v.$fontsizeBasePc;
@@ -162,3 +164,4 @@ iframe {
     pointer-events: none;
   }
 }
+
