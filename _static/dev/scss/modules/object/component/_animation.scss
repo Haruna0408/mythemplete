@@ -62,13 +62,13 @@
 //    }
 //}
 
-.animation {
+.js-animation {
     opacity: 0;
 
-    &.js_scrollIn {
+    &.js-scrollIn {
         opacity: 0;
 
-        &.js_ {
+        &.js-{
 
             &fadeUp {
                 opacity: 0;
@@ -123,9 +123,9 @@
 }
 
 
-.scrollIn {
+.js-scrollIn {
 
-    .animation_ {
+    .js-animation__ {
 
         &text {
             opacity: 0;
@@ -220,6 +220,14 @@
 // }
 
 
+/* scroll down
+-----------------------*/
+.c-scrollDown {
+    
+}
+
+
+
 
 /* clip path
 ---------------------------------------*/
@@ -242,9 +250,9 @@
 //ellips
 //clip-path: ellipse(25% 50% at 25% 50%);
 
-// .js_scrollIn {
+// .js-scrollIn {
 
-//     .js_animation_ {
+//     .js-animation__ {
 
 //         &clipPath_text {
 //             opacity: 1;
@@ -265,8 +273,8 @@
 //     }
 
 //     //clippath-insetをフェードアウト処理
-//     // .js_animation_trigger {
-//     //     &.js_animation_trigger_fadeOut {
+//     // .js-animation__trigger {
+//     //     &.js-animation__trigger__fadeOut {
 //     //         clip-path: inset(0);
 //     //     }
 //     // }

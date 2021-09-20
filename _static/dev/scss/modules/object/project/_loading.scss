@@ -21,7 +21,7 @@
     transform: translateZ(0);
 }
 .p-loading {
-    &_item {
+    &__item {
         width: 10px;
         height: 10px;
         // margin-bottom: 40px;
@@ -30,18 +30,18 @@
         animation: loading_item 1.1s infinite ease;
     }
 
-    // &_img {
+    // &__img {
 
     // }
 
-    &_text {
+    &__text {
         margin-top: 60px;
         font-size: 1.6rem;
         animation: loading_text 1s infinite ease;
     }
 
     //完了時
-    &_completed {
+    &__completed {
         opacity: 0;
         visibility: hidden;
     }
