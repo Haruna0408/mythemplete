@@ -21,18 +21,28 @@ Object
 ----------------------------------------------------------------- */
 @use './modules/object/component/animation';
 @use './modules/object/component/button';
+@use './modules/object/component/grobalnavigation';
 @use './modules/object/component/heading';
+@use './modules/object/component/icon';
+@use './modules/object/component/tag';
+@use './modules/object/component/title';
 
 /* Project
 ----------------------------------------------------------------- */
-@use './modules/object/project/breadcrumb';
 @use './modules/object/project/archive';
 @use './modules/object/project/article';
+@use './modules/object/project/breadcrumb';
+@use './modules/object/project/card';
 @use './modules/object/project/contact';
+@use './modules/object/project/editor';
+@use './modules/object/project/floating';
+@use './modules/object/project/hamburger';
 @use './modules/object/project/notfound';
 @use './modules/object/project/loading';
+@use './modules/object/project/logo';
 @use './modules/object/project/mainvisual';
-@use './modules/object/project/card';
+@use './modules/object/project/pagetop';
+@use './modules/object/project/sidenavigation';
 
 /*
 Utility
