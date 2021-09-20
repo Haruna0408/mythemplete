@@ -4,10 +4,19 @@
 -----------------------------
 */
 (function($) {
+  /*　- スムーズスクロール -
+  /*-----------------------------------*/
+  $('a[href^="#"]').click(function () {
+    var href = $(this).attr("href");
+    var target = $(href);
+    var position = target.offset().top;
+    $('body,html').stop().animate({ scrollTop: position }, 500);
+  });
+
   /* - ページトップボタン
   /* ---------------------------------*/
   function pagetopButton() {
-    var $pagetop      = $('.pagetop-button');
+    var $pagetop      = $('.p-pagetop');
     var positionValue = $(window).scrollTop();
     var showPosition  = 300;
     var easing        = 'swing';
@@ -46,7 +55,7 @@
   /* - ハンバーガーナビ
   /* ---------------------------------*/
   $('.p-hamburger').on('click', function () {
-    $('body').toggleClass('is-drawerActive');
+    $('.c-globalnavigation__area').toggleClass('is-active');
     $('.p-hamburger_text').toggleClass('is-active');
     if ($(this).attr('aria-expanded') == 'false') {
       $(this).attr('aria-expanded', true);
@@ -55,28 +64,28 @@
     }
   });
 
-  /* - スマホメニュー閉じるボタンの処理 -ハンバーガーナビと連動-
+  /* - スマホメニュー閉じる処理 -ハンバーガーナビと連動-
   /* ---------------------------------------------------------*/
-  var $triggerBtn = $('.js-close_trigger');
+  var $triggerBtn = $('.js-open__trigger');
   $triggerBtn.on('click', function (event) {
     $('.p-hamburger').trigger('click');
   });
 
   /*　スマホ　アコーディオンメニュー
   /* ---------------------------------*/
-  $(window).on('load resize', function () {
-    var winW = $(window).width();
-    var devW = 767;
-    var $spDropdownMenu = $('.js-dropdownmenu_open_trigger');
-    if (winW <= devW) {
-      $spDropdownMenu.on('click', function () {
-        if ($(this).next('.globalnav_dropdownmenu_sp').hasClass('is-active')) {
-          $('.globalnav_dropdownmenu_sp').removeClass('is-active');
-        } else {
-          $('.globalnav_dropdownmenu_sp').addClass('is-active');
-        }
-        return false;
-      });
-    }
-  });
+  // $(window).on('load resize', function () {
+  //   var winW = $(window).width();
+  //   var devW = 767;
+  //   var $spDropdownMenu = $('.js-open__trigger');
+  //   if (winW <= devW) {
+  //     $spDropdownMenu.on('click', function () {
+  //       if ($(this).next('.globalnav_dropdownmenu_sp').hasClass('is-active')) {
+  //         $('.globalnav_dropdownmenu_sp').removeClass('is-active');
+  //       } else {
+  //         $('.globalnav_dropdownmenu_sp').addClass('is-active');
+  //       }
+  //       return false;
+  //     });
+  //   }
+  // });
 }(jQuery));
