@@ -19,13 +19,17 @@ Object
 ========================================================================== */
 /* Compoenent
 ----------------------------------------------------------------- */
+@use './modules/object/component/accordion';
 @use './modules/object/component/animation';
 @use './modules/object/component/button';
+@use './modules/object/component/form';
 @use './modules/object/component/grobalnavigation';
 @use './modules/object/component/heading';
 @use './modules/object/component/icon';
 @use './modules/object/component/tag';
 @use './modules/object/component/title';
+@use './modules/object/component/rss';
+@use './modules/object/component/sticky';
 
 /* Project
 ----------------------------------------------------------------- */
@@ -34,6 +38,7 @@ Object
 @use './modules/object/project/breadcrumb';
 @use './modules/object/project/card';
 @use './modules/object/project/contact';
+@use './modules/object/project/copyright';
 @use './modules/object/project/editor';
 @use './modules/object/project/floating';
 @use './modules/object/project/hamburger';
@@ -42,7 +47,11 @@ Object
 @use './modules/object/project/logo';
 @use './modules/object/project/mainvisual';
 @use './modules/object/project/pagetop';
-@use './modules/object/project/sidenavigation';
+@use './modules/object/project/search';
+@use './modules/object/project/slider';
+@use './modules/object/project/sidebar';
+@use './modules/object/project/sns';
+
 
 /*
 Utility
