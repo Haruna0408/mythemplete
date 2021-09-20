@@ -2,22 +2,16 @@
 @use '../../foundation/vars' as v;
 @use '../../foundation/mixin' as m;
 
-/* article
+/* copyright
 ----------------------------------------------------------------- */
-.p-article {
-    &__heading{
+.p-copyright {
+    padding: 40px 0;
 
-    }
-
-    &__title {
-
-    }
-
-    &__lead {
-
-    }
-
-    @include m.mq-max(v.$breakpoint-md) {
+    &__text {
+        font-size: 1.2rem;
+        letter-spacing: .01em;
+        line-height: 1.3;
+        text-align: center;
     }
 
     @include m.mq-max(v.$breakpoint-xs) {

@@ -31,10 +31,13 @@ body {
 	color: v.$colorBase;
   cursor: auto;
   background-color: v.$colorBg;
+  font-feature-settings: "palt";
+
   @include m.mq-max(v.$breakpoint-xs) {
     min-width: initial;
 	  font-size: v.$fontsizeBasePc;
-    @include m.fz_vw(14);
+    // @include m.fz_vw(14);
+    font-size: 1.4rem;
   }
 }
 
@@ -48,6 +51,7 @@ ul,
 li {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 p {
   line-height: v.$lhBasePc;
@@ -57,14 +61,12 @@ p {
   }
 }
 a {
-  display: block;
+  display: inline-block;
   text-decoration: none;
   transition: .3s;
   color: v.$colorBase;
   cursor: pointer;
   &:hover {
-    cursor: pointer;
-    text-decoration: none;
     opacity: .6;
   }
 }
@@ -105,6 +107,7 @@ caption,th {
 img {
   max-width: 100%;
   height: auto;
+  image-rendering: -webkit-optimize-contrast;
 }
 
 
@@ -136,20 +139,22 @@ input[type="submit"] {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  margin: 0;
   line-height: v.$lhTitle;
 }
-h1 {
-    font-size: 28px;
-    @include m.mq-max(v.$breakpoint-xs) {
-      @include m.fz_vw(28);
-    }
-}
-h2 {
-  font-size: 20px;
-  @include m.mq-max(v.$breakpoint-xs) {
-    @include m.fz_vw(20);
-  }
-}
+
+// h1 {
+//     font-size: 2.8rem;
+//     @include m.mq-max(v.$breakpoint-xs) {
+//       @include m.fz_vw(28);
+//     }
+// }
+// h2 {
+//   font-size: 2rem;
+//   @include m.mq-max(v.$breakpoint-xs) {
+//     @include m.fz_vw(20);
+//   }
+// }
 
 iframe {
   border:none;
@@ -161,3 +166,4 @@ iframe {
     pointer-events: none;
   }
 }
+
