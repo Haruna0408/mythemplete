@@ -11,3 +11,18 @@
         @include m.l-inner__min;
     }
 }
+
+.l-wrapper {
+    position: relative;
+}
+
+.l-section {
+    position: relative;
+}
+
+.l-mainvisual {
+    margin-top: -136px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}

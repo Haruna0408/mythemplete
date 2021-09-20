@@ -274,6 +274,7 @@
 //テキスト省略
 @mixin textClamp {
   display: -webkit-box;
+  overflow: hidden;
   /* autoprefixer: off */
   -webkit-box-orient: vertical;
   /* autoprefixer: on */
