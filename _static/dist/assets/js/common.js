@@ -88,4 +88,41 @@
   //     });
   //   }
   // });
+
+/* - フローティングボタン
+/* ---------------------------------*/
+    var $pagetop = $('.p-floating__button');
+    var positionValue = $(window).scrollTop();
+    var showPosition = 300;
+    var easing = 'swing';
+    var speed = 1200;
+    var pagetopVisible;
+    if (positionValue > showPosition) {
+      $pagetop.fadeIn();
+    }
+    $(window).scroll(function () {
+      positionValue = $(window).scrollTop();
+      pagetopVisible = $pagetop.is(':visible');
+      if (positionValue > showPosition) {
+        if (!pagetopVisible) {
+          $pagetop.fadeIn();
+        }
+      } else {
+        if (pagetopVisible) {
+          $pagetop.fadeOut();
+        }
+      }
+    });
+    $pagetop.on('click', function (event) {
+      $('html,body').animate({ scrollTop: 0 }, speed, easing);
+      event.preventDefault;
+    });
+
+
+  /*　アコーディオン
+  /* ---------------------------------*/
+  $('.c-accordion__title.js-trigger').on('click', function(){
+    $(this).toggleClass('is-active');
+    $(this).next('.c-accordion__body').slideToggle().toggleClass('is-active');
+  });
 }(jQuery));

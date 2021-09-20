@@ -6,10 +6,18 @@
 ----------------------------------------------------------------- */
 .p-floating {
     &__list {
-
+        position: fixed;
+        z-index: 99;
     }
 
     &__item {
+        width: 50%;
+    }
 
+    &__button {
+
+    }
+
+    @include m.mq-max(v.$breakpoint-xs) {
     }
 }
