@@ -271,6 +271,15 @@
   white-space: nowrap;
 }
 
+//テキスト省略
+@mixin textClamp {
+  display: -webkit-box;
+  /* autoprefixer: off */
+  -webkit-box-orient: vertical;
+  /* autoprefixer: on */
+  -webkit-line-clamp: 3;
+}
+
 // 子要素margin制御
 @mixin childMargin {
   > * {
