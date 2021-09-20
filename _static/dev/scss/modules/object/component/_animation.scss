@@ -1,8 +1,13 @@
+@charset "utf-8";
+@use '../../foundation/vars' as v;
+@use '../../foundation/mixin' as m;
+
 /* animation
 //------------------------------*/
 
 //参考
 //https://www.otwo.jp/blog/css_animation/
+//https://www.merges.co.jp/demo/scrollreveal.php
 
 //★★★ １つずつ書いた場合 ★★★
 //.animation {
@@ -223,10 +228,56 @@
 /* scroll down
 -----------------------*/
 .c-scrollDown {
-    
+    position: absolute;
+    left: calc(50% - 540px);
+    bottom: 240px;
+    height: 50px;
+
+    &::after {
+        @include m.after;
+        top: 0;
+        left: 5px; //ラインの位置調整
+        right: auto;
+        width: 1px;
+        height: 100%;
+        background-color: v.$colorBase; //#333
+        animation: scrollDown 1.6s ease-in-out infinite;
+        opacity: 0;
+    }
+
+    &__text {
+        position: absolute;
+        top: -35px; //テキスト位置調整
+        display: block;
+        font-size: 1.2rem;
+        color: v.$colorBase;
+        letter-spacing: .05em;
+        line-height: 1.3;
+         -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+    }
 }
 
+/*高さ・位置・透過が変化して線が上から下に動く*/
+@keyframes scrollDown{
+	0%{
+		height: 0;
+		top: 0;
+		opacity: 0;
+	}
+	30%{
+		height: 50%;
+		opacity: 1;
+	}
+	100%{
+		height: 0;
+		top: 100%;
+		opacity: 0;
+	}
+}
 
+//参考：
+//https://coco-factory.jp/ugokuweb/move01/9-1-1/
 
 
 /* clip path
