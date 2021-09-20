@@ -26,7 +26,7 @@
 /* back ground parallax
 ----------------------------------------------------------------- */
 .u-bg__parallax {
-    &_child {
+    &__child {
       background-size: cover;
       background-repeat: no-repeat;
       position: fixed;
@@ -47,14 +47,14 @@
           object-fit: cover;
       }
     }
-    &_tpt {
+    &__tpt {
         // background: url(../images/bg_parallax_tpr@2x.png) no-repeat;
         background-size: cover;
         background-position: center;
     }
 
   @include m.mq-max(v.$breakpoint-xs) {
-    &_child {
+    &__child {
         &::before {
             content: "";
             display: block;
