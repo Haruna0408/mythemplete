@@ -13,3 +13,14 @@
   }
 
 }
+
+.u-ancour {
+  &__content {
+    margin-top: -72px;
+    padding-top: 72px;
+  }
+
+  @include m.mq-max(v.$breakpoint-xs) {
+  }
+
+}
