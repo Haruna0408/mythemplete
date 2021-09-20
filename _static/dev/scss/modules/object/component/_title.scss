@@ -1,3 +1,9 @@
+@charset "utf-8";
+@use '../../foundation/vars' as v;
+@use '../../foundation/mixin' as m;
+
+/* heading
+-------------------------------------*/
 h1 {
   color: blue;
   span {
@@ -7,8 +13,6 @@ h1 {
     &::before,&::after {
       content: '';
       display: block;
-      width: 30px;
-      height: 2px;
       background-color: green;
     }
     &::before {

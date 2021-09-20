@@ -2,22 +2,20 @@
 @use '../../foundation/vars' as v;
 @use '../../foundation/mixin' as m;
 
-/* article
+/* floating
 ----------------------------------------------------------------- */
-.p-article {
-    &__heading{
-
+.p-floating {
+    &__list {
+        position: fixed;
+        z-index: 99;
     }
 
-    &__title {
-
+    &__item {
+        width: 50%;
     }
 
-    &__lead {
+    &__button {
 
-    }
-
-    @include m.mq-max(v.$breakpoint-md) {
     }
 
     @include m.mq-max(v.$breakpoint-xs) {
