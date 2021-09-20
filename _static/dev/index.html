@@ -39,7 +39,8 @@
     <!-- /twitter card -->
     <meta name="twitter:card" content="カード種類" />
     <meta name="twitter:site" content="@Twitterユーザー名" />
-    <!-- GAタグ -->
+    <!-- /Google Analytics Tag -->
+    <!-- <script></script> -->
 </head>
 
 <body>
@@ -96,8 +97,8 @@
 
         <article class="l-article">
             <main class="l-main l-top">
-                <div class="parallax_bg">
-                    <div class="parallax_bg_child">
+                <div class="u-bg__parallax">
+                    <div class="u-bg__parallax__child">
                         <video class="pc" autoplay loop muted playsinline src="./assets/movie/bg_mv_pc.mp4" type="video/mp4">
                             <source srcset=" bg_mv_pc.mp4">
                         </video>
@@ -107,29 +108,25 @@
                     </div>
                 </div>
 
-                <div class="c-scrolldown">
-                    <span class="c-scrolldown__text">Scroll</span>
-                </div>
-
                 <div class="l-section l-mainvisual">
-                    <div class="l-inner">
-
-                        <!-- mv video -->
-                        <div class="p-mainvisual__area">
-                            <!-- mv -->
-                            <div class="p-mainvisual__wrap">
-                                <video src="./assets/movie/bg_mv.mp4" class="p-mainvisual__movie ie_object_images" playsinline="" autoplay=""
-                                    muted="" loop=""></video>
-                                <div class="p-mainvisual__text">
-                                    <picture>
-                                        <source media="(min-width: 701px)" srcset="./assets/images/pc/mv-tit@2x.png">
-                                        <source media="(max-width: 700px)" srcset="./assets/images/sp/mv-tit_sp@2x.png">
-                                        <img src="/assets/images/pc/mv-tit@2x.png" alt="空気から暮らしを考えるナノイーx水から生まれた清潔イオン">
-                                    </picture>
-                                </div>
+                    <!-- mv video -->
+                    <div class="p-mainvisual__area">
+                        <!-- mv -->
+                        <div class="p-mainvisual__wrap">
+                            <video src="./assets/movie/bg_mv.mp4" class="p-mainvisual__movie ie_object_images" playsinline="" autoplay=""
+                                muted="" loop=""></video>
+                            <div class="p-mainvisual__text">
+                                <picture>
+                                    <source media="(min-width: 701px)" srcset="./assets/images/pc/mv-tit@2x.png">
+                                    <source media="(max-width: 700px)" srcset="./assets/images/sp/mv-tit_sp@2x.png">
+                                    <img src="/assets/images/pc/mv-tit@2x.png" alt="説明が入ります">
+                                </picture>
                             </div>
                         </div>
                     </div>
+                    <div class="c-scrollDown">
+                        <span class="c-scrollDown__text">Scroll</span>
+                    </div><!-- scrollDown /-->
                 </div>
                 <!--.l-mainvisual /-->
 
@@ -217,11 +214,37 @@
                 </section>
                 <!--.l-pickup /-->
 
-                <section id="blog" class="l-section l-section__blog">
+                <section id="faq" class="l-section l-section__faq">
+                    <div class="l-inner">
+                        <h2 class="c-title">faq</h2>
+                        <div class="p-faq__wrap">
+                            <dl class="c-accordion__box">
+                                <dt class="c-accordion__title js-trigger p-faq__title">タイトル</dt>
+                                <dd class="c-accordion__body p-faq__item">
+                                    テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </section>
+                <!--.l-section__about /-->
+
+                <section id="news" class="l-section l-section__news">
                     <div class="l-inner">
                         <h2 class="c-title">BLOG</h2>
-                        <p class="p-button"><a href="#" target="_blank" rel="noopener noreferrer"
-                                class="c-button__base c-icon__arrow">一覧を見る</a></p>
+                        <div class="c-rss__list p-news__list">
+                            <div class="c-rss__item p-news__item">
+                                <a href="#" class="c-rss__link p-news__link">
+                                    <dl class="c-rss__body p-news__body">
+                                        <dt class="c-rss__day p-news__day">日付が入ります<span class="c-tag p-category__item">お知らせ</span></dt>
+                                        <dd class="c-rss__lead p-news__lead">タイトルが入りますタイトルが入りますタイトルが入ります</dd>
+                                    </dl>
+                                </a>
+                            </div>
+                        </div>
+                        <p class="c-button__base">
+                            <a href="#" class="c-button__base c-icon__arrow">一覧を見る</a>
+                            </p>
                     </div>
                 </section>
                 <!--.l-section__blog /-->
@@ -250,6 +273,7 @@
                 </section>
                 <!--.l-section__about /-->
 
+
                 <section id="contact" class="l-section l-section__contact　c-bgcolor__gray">
                     <div class="l-inner">
                         <h2 class="c-title">CONTACT</h2>
@@ -259,6 +283,23 @@
                     </div>
                 </section>
                 <!--.l-section__contact /-->
+
+                <ul class="p-sns__list">
+                    <li class="p-sns__item c-icon__twitter">
+                        <a href="http://twitter.com/share?text=&amp;url=http://" rel="nofollow" target="_blank">
+                            <img src="./assets/images/common/icon_twitter.png" alt="Tweeter">
+                        </a>
+                    </li>
+                    <li class="p-sns__item c-icon__facebook">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=http://" rel="nofollow" target="_blank">
+                            <img src="./assets/images/common/icon_facebook.png" alt="FaceBook">
+                        </a>
+                    </li>
+                    <li class="p-sns__item c-icon__line"><a href="https://social-plugins.line.me/lineit/share?url=http:// target="_blank">
+                        <img src="./assets/images/common/icon_line.png" alt="Line">
+                    </a>
+                    </li>
+                </ul>
 
             </main>
             <!--.l-main /-->
@@ -276,7 +317,7 @@
 
             <ul class="p-floating__list">
                 <li class="p-floating__item">
-                    <a href="#" class="icon- p-floating__button"></a>
+                    <a href="#" class="c-button__base c-icon__contact p-floating__button"></a>
                 </li>
             </ul><!-- .p-floating /-->
             <div class="p-pagetop">
@@ -290,7 +331,9 @@
     <!--.l-wrapper /-->
 <!-- /JS -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script><!-- /全体-->
-<script src="../assets/js/common.js"></script><!-- /全体-->
-<script src="../assets/js/animation.js"></script><!-- /アニメーション用-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.js"></script>
+<!-- <script></script> -->
+<script src="./assets/js/common.js"></script><!-- /全体-->
+<script src="./assets/js/animation.js"></script><!-- /アニメーション用-->
 </body>
 </html>

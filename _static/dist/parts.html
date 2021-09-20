@@ -17,6 +17,8 @@
     <!-- /opensans -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
     <!-- /css -->
+    <link rel="stylesheet" href="./assets/css/slick.css">
+    <link rel="stylesheet" href="./assets/css/slick-theme.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- /favicon -->
     <link rel="icon" href="/assets/img/common/favicon.ico">
@@ -97,7 +99,7 @@
         <!--.l-header /-->
 
         <article class="l-article">
-            <main class="l-main">
+            <main class="l-main l-page">
                 <div class="u-bg__parallax">
                     <div class="u-bg__parallax__child">
                         <video class="pc" autoplay loop muted playsinline src="./assets/movie/bg_mv_pc.mp4"
@@ -128,100 +130,112 @@
                         </div>
                     </div>
                 </div>
-                <!--.l-mainvisual /-->
+                <!--.l-mainvisual__page /-->
 
-                <section class="l-section l-pickup">
+                <section class="c-sticky__area">
+                    <div class="c-sticky__content">
+                        <div class="c-sticky__side p-sidebar__area p-sticky__parent">
+                            <aside class="p-sidebar__wrap p-sticky__child">
+                                <div class="p-sidebar__cateList">
+                                    <div class="p-sidebar__cateBlock">
+                                        <dl class="p-sidebar___cateItem">
+                                            <dt class="p-sidebar__cateItem__main">
+                                                <a href="#" class="p-sidebar__cateLink">
+                                                    <div class="p-sidebar__cateIcon">
+                                                        <img src="https://yomimarche.testsite-xs.work/mock/assets/img/common/icon_info.svg"
+                                                            alt="よみものアイコン">
+                                                    </div>
+                                                    <p class="p-sidebar__cateName">親カテゴリ</p>
+                                                </a>
+                                            </dt>
+                                            <dd class="p-sidebar__cateItem__sub">
+                                                <a href="#" class="p-sidebar__cateLink">
+                                                    <div class="p-sidebar__cateIcon">
+                                                        <img src="https://yomimarche.testsite-xs.work/mock/assets/img/common/dummy_icon.png"
+                                                            alt="よみものアイコン">
+                                                    </div>
+                                                    <p class="p-sidebar__cateName">子カテゴリ</p>
+                                                </a>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                                <div class="p-sidebar__cateList">
+                                    <div class="p-sidebar__cateBlock">
+                                        <div class="p-sidebar__cateItem">
+                                            <a href="#" class="p-sidebar__cateLink">
+                                                <div class="p-sidebar__cateIcon">
+                                                    <img src="https://yomimarche.testsite-xs.work/mock/assets/img/common/icon_info.svg"
+                                                        alt="おしらせアイコン">
+                                                </div>
+                                                <p class="p-sidebar__cateName">親カテゴリ</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </aside>
+                        </div><!-- .p-sticky__side /-->
+                        <div class="c-sticky__main">
+                            <div class="l-inner">
+                                <div class="p-slider__area">
+                                    <div class="p-slider__box">
+                                        <div class="p-slider__item">
+                                            <div class="p-slider__img">
+                                                <img src="./assets/images/img-article.png" alt="イメージ">
+                                            </div>
+                                            <div class="p-slider__text">
+                                                <p class="p-slider__title">タイトル</p>
+                                            </div>
+                                        </div>
+                                        <div class="p-slider__item">
+                                            <div class="p-slider__img">
+                                                <img src="./assets/images/img-article.png" alt="イメージ">
+                                            </div>
+                                            <div class="p-slider__text">
+                                                <h3 class="p-slider__title">タイトル</h3>
+                                            </div>
+                                        </div>
+                                        <div class="p-slider__item">
+                                            <div class="p-slider__img">
+                                                <img src="./assets/images/img-article.png" alt="イメージ">
+                                            </div>
+                                            <div class="p-slider__text">
+                                                <h3 class="p-slider__title">タイトル</h3>
+                                            </div>
+                                        </div>
+                                        <div class="p-slider__item">
+                                            <div class="p-slider__img">
+                                                <img src="./assets/images/img-article.png" alt="イメージ">
+                                            </div>
+                                            <div class="p-slider__text">
+                                                <h3 class="p-slider__title">タイトル</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- .p-sticky__main /-->
+                    </div>
+                </section><!--.p-sticky__area /-->
+
+                <section class="l-section l-search">
                     <div class="l-inner">
                         <!-- コンテンツ -->
                         <h2 class="c-heading">
-                            <span class="c-heading__main">ADVANTAGE</span>
-                            <span class="c-heading__sub">強み</span>
+                            <span class="c-heading__main">Search</span>
+                            <span class="c-heading__sub">検索</span>
                         </h2>
 
-                        <div class="p-card__list">
-                            <!-- Advantage01 -->
-                            <div class="p-card__item">
-                                <!-- <a href="#" class="p-card__link"> -->
-                                <div class="p-card__img" style="background-image: url();">
-                                    <!--/img-->
-                                    <img src="./assets/img/top/icon-advantage01.svg" alt="ナイトワークアイコン">
-                                    <!-- /picture pc/ spで画像切り替え -->
-                                    <picture>
-                                        <source srcset="./assets/img/card-img.jpg" media="(min-width: 768px)" />
-                                        <img src="./assets/img/card-img-sp.jpg" alt="" />
-                                    </picture>
-                                </div>
-                                <div class="p-card__body">
-                                    <h3 class="c-title p-card__title">天文館ナイトワークに特化！</h3>
-                                    <p class="c-lead p-card__lead">
-                                        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                                    </p>
-                                </div>
-                                <!-- </a> -->
-                                <!-- 記事ページへリンク -->
-                                <a href="#" class="c-button__base p-card__button">MORE DETAIL</a>
-                            </div>
-
-                            <!-- Advantage02 -->
-                            <div class="p-card__item">
-                                <!-- <a href="#" class="p-card__link"> -->
-                                <div class="p-card__img" style="background-image: url();">
-                                    <!--/img-->
-                                    <img src="./assets/img/top/icon-advantage01.svg" alt="ナイトワークアイコン">
-                                    <!-- /picture pc/ spで画像切り替え -->
-                                    <picture>
-                                        <source srcset="./assets/img/card-img.jpg" media="(min-width: 768px)" />
-                                        <img src="./assets/img/card-img-sp.jpg" alt="" />
-                                    </picture>
-                                </div>
-                                <div class="p-card__body">
-                                    <h3 class="c-title p-card__title">天文館ナイトワークに特化！</h3>
-                                    <p class="c-lead p-card__lead">
-                                        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。キストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                                    </p>
-                                </div>
-                                <!-- </a> -->
-                                <!-- 記事ページへリンク -->
-                                <a href="#" class="c-button__base p-card__button">MORE DETAIL</a>
-                            </div>
-
-                            <!-- Advantage03 -->
-                            <div class="p-card__item">
-                                <!-- <a href="#" class="p-card__link"> -->
-                                <div class="p-card__img" style="background-image: url();">
-                                    <!--/img-->
-                                    <img src="./assets/img/top/icon-advantage01.svg" alt="ナイトワークアイコン">
-                                    <!-- /picture pc/ spで画像切り替え -->
-                                    <picture>
-                                        <source srcset="./assets/img/card-img.jpg" media="(min-width: 768px)" />
-                                        <img src="./assets/img/card-img-sp.jpg" alt="" />
-                                    </picture>
-                                </div>
-                                <div class="p-card__body">
-                                    <h3 class="c-title p-card__title">天文館ナイトワークに特化！</h3>
-                                    <p class="c-lead p-card__lead">
-                                        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                                    </p>
-                                </div>
-                                <!-- </a> -->
-                                <!-- 記事ページへリンク -->
-                                <a href="#" class="c-button__base p-card__button">MORE DETAIL</a>
-                            </div>
-
-                        </div>
+                        <div class="p-search__box">
+                            <form class="p-search__form" action="/">
+                                <input class="p-search__input" name="schKeyword" type="text">
+                                <input class="p-search__button__submit" type="submit" value="">
+                            </form>
+                        </div><!--.l-search box /-->
 
                     </div>
                 </section>
-                <!--.l-pickup /-->
-
-                <section id="blog" class="l-section l-section__blog">
-                    <div class="l-inner">
-                        <h2 class="c-title">BLOG</h2>
-                        <p class="p-button"><a href="#" target="_blank" rel="noopener noreferrer"
-                                class="c-button__base c-icon__arrow">一覧を見る</a></p>
-                    </div>
-                </section>
-                <!--.l-section__blog /-->
+                <!--.l-search /-->
 
                 <section id="about" class="l-section l-section__about">
                     <div class="l-inner">
@@ -247,15 +261,40 @@
                 </section>
                 <!--.l-section__about /-->
 
-                <section id="contact" class="l-section l-section__contact　c-bgcolor__gray">
-                    <div class="l-inner">
-                        <h2 class="c-title">CONTACT</h2>
-                        <p class="c-bg__radius c-bgcolor__white"><img src="./assets/img/icon_contact.svg"
-                                alt="お問い合わせアイコン">
-                        </p>
-                    </div>
-                </section>
-                <!--.l-section__contact /-->
+
+                <!--sns 記事シェア-->
+                <ul class="p-sns--share__list">
+                    <li class="p-sns--share__item facebook__link">
+                        <!--Facebookボタン-->
+                        <a href="//www.facebook.com/sharer.php?src=bm&u=<?php echo $url_encode;?>&t=<?php echo $title_encode;?>"
+                            onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;">
+                            <i class="fa fa-facebook"></i><span>facebook</span>
+                        </a>
+                    </li>
+                    <!--ツイートボタン-->
+                    <li class="p-sns--share__item twitter_link">
+                        <a href="//twitter.com/intent/tweet?url=<?php echo $url_encode ?>&text=<?php echo $title_encode ?>&tw_p=tweetbutton"
+                            onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;">
+                            <i class="fa fa-twitter"></i><span> tweet</span>
+                        </a>
+                    </li>
+
+                    <!--LINEボタン-->
+                    <li class="p-sns--share__item line__link">
+                        <a href="//social-plugins.line.me/lineit/share?url=<?php echo $url_encode;?>"
+                            onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=500');return false;">
+                            <span>LINE</span>
+                        </a>
+                    </li>
+
+                    <!--はてなボタン-->
+                    <li class="p-sns--share__item hatena__link">
+                        <a href="//b.hatena.ne.jp/entry/<?php echo $url_encode ?>"
+                            onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=510');return false;"><i
+                                class="fa fa-hatena"></i><span> はてブ</span>
+                        </a>
+                    </li>
+                </ul>
 
             </main>
             <!--.l-main /-->
@@ -290,8 +329,10 @@
     <!--.l-wrapper /-->
     <!-- /JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script><!-- /全体-->
-    <script src="../assets/js/common.js"></script><!-- /全体-->
-    <script src="../assets/js/animation.js"></script><!-- /アニメーション用-->
+    <script src="./assets/js/slick.min.js"></script><!-- /slick-->
+    <script src="./assets/js/common.js"></script><!-- /共通-->
+    <script src="./assets/js/animation.js"></script><!-- /アニメーション用-->
+    <script src="./assets/js/slider.js"></script><!-- /スライダー用-->
 </body>
 
 </html>
