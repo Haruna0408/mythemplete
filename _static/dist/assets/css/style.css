@@ -88,6 +88,7 @@ html {
 
 body {
   position: relative;
+  overflow: hidden;
   font-family: "Noto Sans JP", "メイリオ", Meiryo, sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -298,7 +299,6 @@ iframe {
 
 .l-wrapper {
   position: relative;
-  overflow: hidden;
 }
 
 .l-section {
