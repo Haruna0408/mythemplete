@@ -55,7 +55,7 @@
   /* - ハンバーガーナビ
   /* ---------------------------------*/
   $('.p-hamburger').on('click', function () {
-    $('.c-globalnavigation__area').toggleClass('is-active');
+    $('.p-nav__area').toggleClass('is-active');
     $('.p-hamburger_text').toggleClass('is-active');
     if ($(this).attr('aria-expanded') == 'false') {
       $(this).attr('aria-expanded', true);
@@ -73,21 +73,21 @@
 
   /*　スマホ　アコーディオンメニュー
   /* ---------------------------------*/
-  // $(window).on('load resize', function () {
-  //   var winW = $(window).width();
-  //   var devW = 767;
-  //   var $spDropdownMenu = $('.js-open__trigger');
-  //   if (winW <= devW) {
-  //     $spDropdownMenu.on('click', function () {
-  //       if ($(this).next('.globalnav_dropdownmenu_sp').hasClass('is-active')) {
-  //         $('.globalnav_dropdownmenu_sp').removeClass('is-active');
-  //       } else {
-  //         $('.globalnav_dropdownmenu_sp').addClass('is-active');
-  //       }
-  //       return false;
-  //     });
-  //   }
-  // });
+  $(window).on('load resize', function () {
+    var winW = $(window).width();
+    var devW = 767;
+    var $spDropdownMenu = $('.js-open__trigger');
+    if (winW <= devW) {
+      $spDropdownMenu.on('click', function () {
+        if ($(this).next('.globalnav_dropdownmenu_sp').hasClass('is-active')) {
+          $('.globalnav_dropdownmenu_sp').removeClass('is-active');
+        } else {
+          $('.globalnav_dropdownmenu_sp').addClass('is-active');
+        }
+        return false;
+      });
+    }
+  });
 
 /* - フローティングボタン
 /* ---------------------------------*/
