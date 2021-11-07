@@ -5,7 +5,7 @@
 
 /* grobalnavigation
 -------------------------------------------*/
-.c-globalnavigation {
+.p-nav{
     &__area {
     }
 
@@ -44,6 +44,7 @@
     @include m.mq-max(v.$breakpoint-xs) {
         &__area {
             display: none;
+
             &.is-active {
                 display: block;
                 position: fixed;
