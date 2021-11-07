@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+    <!---------------------------------------- meta ------------------------------------------------------------------>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,18 +9,17 @@
     <!-- 公開時削除↓↓ -->
     <meta name="robots" content="noindex,nofollow" />
     <!-- 公開時削除↑↑ -->
-    <title>パーツページ | テンプレート</title>
-    <!-- googlefont -->
+    <!---------------------------------------- title ------------------------------------------------------------------>
+    <title>インデックス | テンプレート</title>
+    <!---------------------------------------- font ------------------------------------------------------------------->
     <!-- /notosans -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet">
     <!-- /opensans -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
-    <!-- /css -->
-    <link rel="stylesheet" href="./assets/css/slick.css">
-    <link rel="stylesheet" href="./assets/css/slick-theme.css">
+    <!------------------------------------------- css ------------------------------------------------------------------>
     <link rel="stylesheet" href="./assets/css/style.css">
-    <!-- /favicon -->
+    <!----------------------------------------- favicon ----------------------------------------------------------------->
     <link rel="icon" href="/assets/img/common/favicon.ico">
     <link rel="apple-touch-icon" href="/assets/img/common/apple-touch-icon.png" sizes="180x180">
     <link rel="icon" type="image/png" href="/assets/img/common/favicon-16x16.png" sizes="16x16">
@@ -29,7 +29,7 @@
     <link rel="icon" type="image/png" href="/assets/img/common/android-chrome-512x512.png" sizes="512x512">
     <!-- /スマホ用アイコン画像 -->
     <link rel="apple-touch-icon-precomposed" href="画像のURL" />
-    <!-- /OGP -->
+    <!-- -------------------------------------------- OGP ---------------------------------------------------------------->
     <meta property="og:url" content="ページのURL" />
     <meta property="og:title" content="ページのタイトル" />
     <meta property="og:type" content="ページのタイプ">
@@ -38,14 +38,15 @@
     <meta property="og:site_name" content="サイト名" />
     <meta property="og:locale" content="ja_JP" />
     <meta property="fb:app_id" content="appIDを入力" />
-    <!-- /twitter card -->
+    <!------------------------------------------------- twitter card ------------------------------------------------------>
     <meta name="twitter:card" content="カード種類" />
     <meta name="twitter:site" content="@Twitterユーザー名" />
-    <!-- GAタグ -->
+    <!------------------------------------------------- Google Analytics Tag ---------------------------------------------->
+    <!-- <script></script> -->
 </head>
 
 <body>
-    <!-- /loading -->
+    <!-------------------------------------------------/ Loading ---------------------------------------------------------->
     <div id="loading">
         <div class="p-loading__item"></div>
         <!-- <p class="p-loading__img"><img src="./assets/img/img_about.png" alt="ローディング画像"></p> -->
@@ -54,6 +55,7 @@
 
     <div class="l-wrapper">
 
+        <!-------------------------------------------------/ Header ---------------------------------------------------------->
         <header id="header" class="l-header">
             <div class="l-header__content l-header__inner">
                 <div class="l-header__top">
@@ -68,14 +70,14 @@
                     <!-- </li>
                     </ul> -->
                 </div>
-                <div class="c-globalnavigation__area drower">
-                    <nav class="c-globalnavigation__content">
-                        <ul class="c-globalnavigation__list">
-                            <li class="c-globalnavigation__item">
-                                <a href="./contact/" class="c-globalnavigation__link js-open__trigger">about</a>
+                <div class="p-nav__area drower">
+                    <nav class="p-nav__content">
+                        <ul class="p-nav__list">
+                            <li class="p-nav__item">
+                                <a href="./contact/" class="p-nav__link js-open__trigger">about</a>
                             </li>
-                            <li class="c-globalnavigation__item">
-                                <a href="#" class="c-globalnavigation__link js-open__trigger">blog</a>
+                            <li class="p-nav__item">
+                                <a href="#" class="p-nav__link js-open__trigger">blog</a>
                             </li>
                         </ul>
                         <!-- <div class="c-globalnav__button _sp js-close_trigger">
@@ -96,9 +98,13 @@
             <!--.l-header__content /-->
         </header>
         <!--.l-header /-->
+        <!------------------------------------------------- Header /---------------------------------------------------------->
 
+        <!-------------------------------------------------/ Aeticle --------------------------------------------------------->
         <article class="l-article">
-            <main class="l-main l-page">
+
+            <main class="l-main">
+
                 <div class="u-bg__parallax">
                     <div class="u-bg__parallax__child">
                         <video class="pc" autoplay loop muted playsinline src="./assets/movie/bg_mv_pc.mp4"
@@ -261,7 +267,6 @@
                 </section>
                 <!--.l-section__about /-->
 
-
                 <!--sns 記事シェア-->
                 <ul class="p-sns--share__list">
                     <li class="p-sns--share__item facebook__link">
@@ -300,7 +305,9 @@
             <!--.l-main /-->
         </article>
         <!--.l-article /-->
+        <!------------------------------------------------- Article /--------------------------------------------------------->
 
+        <!-------------------------------------------------/ Footer ---------------------------------------------------------->
         <footer class="l-footer">
             <div class="l-footer__top">
 
@@ -309,7 +316,6 @@
                 <p class="p-copyright__text">&copy;&nbsp;2021 Haruna Ishikawa</p>
             </div>
             <!--.l-copright /-->
-
 
             <ul class="p-floating__list">
                 <li class="p-floating__item">
@@ -325,14 +331,17 @@
 
         </footer>
         <!--.l-footer /-->
+        <!------------------------------------------------- Footer /----------------------------------------------------------->
+
     </div>
     <!--.l-wrapper /-->
-    <!-- /JS -->
+
+    <!------------------------------------------------------ JavaScript ------------------------------------------------------>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script><!-- /全体-->
     <script src="./assets/js/slick.min.js"></script><!-- /slick-->
     <script src="./assets/js/common.js"></script><!-- /共通-->
     <script src="./assets/js/animation.js"></script><!-- /アニメーション用-->
     <script src="./assets/js/slider.js"></script><!-- /スライダー用-->
-</body>
 
+</body>
 </html>
